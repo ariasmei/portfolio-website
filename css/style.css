@@ -1,18 +1,17 @@
-{
-	box-sizing: border-box;
+header {
+	box-shadow: 4px 4px 21px rgba(50, 50, 50, 1);
+	position: relative;
+	background-color: #f7f7f7f7;
+	text-align: center;
+	padding: 10px 0;
 }
 
 body {
+	box-sizing: border-box;
+	behavior: url(/scripts/boxsizing.htc);
 	background-color: #f7f7f7f7;
 	font-family: 'Kumbh Sans', sans-serif;
 	line-height: 1;
-}
-
-h1,
-h2,
-h3,
-h4 {
-	line-height: 1.4;
 }
 
 h1 {
@@ -35,74 +34,122 @@ h4 {
 	font-weight: 200;
 }
 
-
-}
 img {
-	width: 100%;
+	width: 50%;
 }
+
 a {
 	color: #00000;
 	text-decoration: none;
 	/* No underlining */
 }
+
 a:hover {
 	color: #ffffff;
 	text-decoration: underline;
 	/* Underlining when hovering over a link */
 }
+
 a:visited {
 	/* visited link */
-
 	color: #000000;
 }
-a:active {
-	/* selected link */
 
-	color: #ffffff;
+nav>ul>li>a:visited {
+	/* selected link */
+	color: #00000;
 }
+
 a:hover,
 a:focus {
 	color: #cfcfcf;
 	text-decoration: underline;
 }
+
 .button {
 	display: inline-block;
 	/* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-
 	background-color: #cfcfcf;
 	color: #ffffff;
 	/* needed to override the default link color */
-
 	font-weight: 200;
 	padding: 10px;
 	border-radius: 10px;
 	border-bottom: 2px solid #ffffff;
 	/* width of the border, type, color */
-
 	transition: 0.2s opacity;
 }
+
 .button:hover {
 	opacity: 0.8;
 	/* Reduces the opacity of the button to 80% */
-
 	text-decoration: none;
 }
-.button.contact {
+
+.button .contact {
 	background-color: transparent;
 	color: #ffffff;
 	text-transform: uppercase;
 	border: 2px solid #ffffff;
 }
-.button.contact:hover {
-	background-color: #ffffff;
-	color: #ffffff;
-}
-.button.contact:active {
+
+.button .contact:hover {
 	background-color: #ffffff;
 	color: #ffffff;
 }
 
+.button .contact:active {
+	background-color: #ffffff;
+	color: #ffffff;
+}
+
+
 /* Layout styling */
+
 .container {
 	padding: 0 15px;
+}
+
+.logo {
+	max-width: 400px;
+}
+
+nav>ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+nav>ul>li {
+	display: inline-block;
+}
+
+.subheader {
+	text-align: center;
+	margin-bottom: 100px
+}
+
+nav>ul>li>a {
+	padding: 0 15px;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #000000;
+}
+
+.navigation {
+	width: 100%;
+}
+
+.hero {
+	text-align: center;
+}
+
+.hero {
+	background-color: #f7f7f7f7;
+	padding: 20px 0;
+	display: inline-block;
+	width: 100%;
+}
+
+main {
+	padding-top: 50px;
 }
