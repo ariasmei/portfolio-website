@@ -1,7 +1,7 @@
 header {
 	box-shadow: 4px 4px 21px rgba(50, 50, 50, 1);
 	position: relative;
-	background-color: #f7f7f7f7;
+	background-color: #f7f7f7;
 	text-align: center;
 	padding: 10px 0;
 }
@@ -9,7 +9,7 @@ header {
 body {
 	box-sizing: border-box;
 	behavior: url(/scripts/boxsizing.htc);
-	background-color: #f7f7f7f7;
+	background-color: #f7f7f7;
 	font-family: 'Kumbh Sans', sans-serif;
 	line-height: 1;
 }
