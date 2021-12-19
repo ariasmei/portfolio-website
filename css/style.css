@@ -77,7 +77,6 @@ a:focus {
 	border-radius: 10px;
 	border-bottom: 2px solid #000000;
 	transition-duration: 0.2s;
-	transition:[transition-property] [transition-duration] [transition-timing-function] [transition-delay];
 }
 
 
