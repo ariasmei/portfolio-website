@@ -79,7 +79,6 @@ a:focus {
 	transition-duration: 0.2s;
 }
 
-
 .button:hover {
 	opacity: 0.8;
 	/* Reduces the opacity of the button to 80% */
@@ -132,7 +131,7 @@ nav>ul>li>a {
 	padding: 0 15px;
 	text-transform: uppercase;
 	font-weight: 700;
-	color: #00000;
+	color: #000000;
 }
 
 .navigation {
@@ -144,7 +143,7 @@ nav>ul>li>a {
 }
 
 .hero {
-	background-color: #f7f7f7f7;
+	background-color: #f7f7f7;
 	padding: 20px 0;
 	display: inline-block;
 	width: 100%;
@@ -154,35 +153,37 @@ main {
 	padding-top: 99px;
 }
 
+[class*="col-"] {
+	float: left;
+}
+
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
 
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 
-
-@media only screen and (max-width: 640px)
-{ header {
-    text-align: unset;
-    padding: 20px 0 13px;
-  }
-
-  .navigation {
-    width: auto;
-    float: right;
-    margin-top: 30px;
-  }
+@media only screen and (min-width: 640px) {
+	header {
+		text-align: unset;
+		padding: 20px 0 13px;
+	}
+	.navigation {
+		width: auto;
+		float: right;
+		margin-top: 30px;
+	}
 	.col-md-6 {
-  width: 50%;
-}
-[class*="col-"] {
-  float: left;
-}
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-#about-page h3 { margin-top: 0;}
+		width: 50%;
+	}
+	#about-page h3 {
+		margin-top: 0;
+	}
 }
 
 
@@ -190,69 +191,86 @@ Medium devices (640px and larger)
 Large devices (1024px or larger)
 ================================= */
 
-
-@media only screen and (max-width: 1024px) {
+@media only screen and (min-width: 1024px) {
+	.col-lg-7 {
+		width: 70;
+	}
 	.col-md-6 {
-  width: 41.66%;
+		width: 50%;
+	}
+	.col-md-5 {
+		width: 30%;
+	}
+	h1 {
+		text-align: center;
+	}
+	.selfie {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%;
+	}
 }
-[class*="col-"] {
-  float: left;
-}
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-h1{ text-align:center;}
 
-.selfie{ display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;}
-}
 
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
 
-
 @media only screen and (min-width: 1440px) {
 	.container {
-	  max-width: 1200px;
-	  margin-left: auto;
-	  margin-right: auto;
+		max-width: 1200px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 }
 
 @keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
+	0% {
+		fill: #edc655;
+	}
+	50% {
+		fill: #fcffad;
+	}
+	100% {
+		fill: #f76414;
+	}
 }
 
 .sun {
-  animation-duration: 4s;
-  animation-name: color-change;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
+	animation-duration: 4s;
+	animation-name: color-change;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: linear;
 }
+
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+	from {
+		transform: translate(0, 50px);
+	}
+	to {
+		transform: translate(200px, 50px);
+	}
 }
+
 .cloud-front {
-  animation-duration: 30s;
-  animation-name: cloud-move;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
+	animation-duration: 30s;
+	animation-name: cloud-move;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: linear;
 }
+
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+	from {
+		transform: translate(446px, 48px);
+	}
+	to {
+		transform: translate(100px, 48px);
+	}
 }
 
 .cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
+	animation: 34s cloud-move-reverse infinite alternate linear;
 }
