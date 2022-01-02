@@ -2,7 +2,6 @@ header {
 	box-shadow: 4px 4px 21px rgba(50, 50, 50, 1);
 	position: relative;
 	background-color: #f7f7f7;
-	text-align: center;
 	padding: 10px 0;
 }
 
@@ -12,6 +11,7 @@ body {
 	background-color: #f7f7f7;
 	font-family: 'Kumbh Sans', sans-serif;
 	line-height: 1;
+	text-align: center;
 }
 
 h1 {
@@ -124,7 +124,7 @@ nav>ul>li {
 
 .subheader {
 	text-align: center;
-	margin-bottom: 100px
+	margin-bottom: 50px
 }
 
 nav>ul>li>a {
@@ -135,7 +135,7 @@ nav>ul>li>a {
 }
 
 .navigation {
-	width: 100%;
+	width: 400%;
 }
 
 .hero {
@@ -161,6 +161,23 @@ main {
 	content: "";
 	clear: both;
 	display: table;
+}
+
+#film {
+	background-color: #000000;
+	color: #ffffff
+}
+
+#era {
+	background-color: #fdfbf1;
+}
+
+#ez {
+	background-color: #f5f4ef;
+}
+
+#barista {
+	background-color: #ffffff;
 }
 
 
